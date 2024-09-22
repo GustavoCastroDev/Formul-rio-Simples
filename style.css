@@ -1,0 +1,107 @@
+/*definindo o background do site*/
+body {
+    background-image: url(assets/wallpaper1.jpg);
+}
+
+/*importando fonte 'Poppins'*/
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*estilizando o texto principal*/
+.main-text {
+    font-family: Poppins;
+    color: rgb(223, 223, 223);
+    margin-left: 15%;
+    padding-top: 5%;
+    font-size: 30px;
+}
+
+/*estilizando o 'texto secundário'*/
+.second-text {
+    font-family: Poppins;
+    color: rgb(223, 223, 223);
+    margin-left: 17%;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-right: 17%;
+    text-align: center;
+    font-weight: 300;
+}
+
+/*estilizando a section*/
+.main-section {
+    justify-content: center;
+    align-items: top;
+    height: 550px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.600);
+    border-radius: 10px;
+    margin-left: 27%;
+    margin-top: 3%;
+}
+
+/*estilizando o tamanho da linha do hr*/
+.hr-class {
+    max-width: 85%;
+}
+
+.p-class{
+    font-family: Poppins;
+    font-size: 13px;
+    color: rgb(223, 223, 223);
+    margin-left: 18%;
+    margin-top: 5%;
+}
+
+/*estilizando o botão*/
+.main-button {
+    font-family: Poppins;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.500);
+    margin-left: 40%;
+}
+
+.main-button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+.main-button:hover,
+button:focus {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.main-button:hover:before,
+button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.main-button:active {
+    transform: scale(0.9);
+}
