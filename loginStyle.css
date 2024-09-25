@@ -1,6 +1,7 @@
 /*definindo o background do site*/
 body {
     background-image: url(assets/wallpaper2.jpg);
+    
 }
 
 /*importando fonte 'Poppins'*/
@@ -46,8 +47,8 @@ body {
 .main-title{
     font-family: Poppins;
     color: rgb(223, 223, 223);
-    padding-left: 7%;
-    margin-top: -290px;
+    padding-left: 32%;
+    margin-top: -280px;
 }
 
 .login-contents{
@@ -55,8 +56,71 @@ body {
     height: 400px;
     justify-content: center;
     align-items: center;
-    display: flex;
     margin-left: 50px;
 }
 
+.main-inputs{
+    font-family: Poppins;
+    color: rgb(223, 223, 223);
+}
+
 /*estilizando os inputs*/
+.inputNome{
+    width: 490px;
+    border-radius: 7px;
+    height: 25px;
+    background-color: black;
+    border: 2px solid rgb(223, 223, 223);
+    font-family: Poppins;
+    color: rgb(223, 223, 223);
+    margin-top: -10px;
+}
+
+.iputBtn{
+    font-family: Poppins;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.500);
+    margin-left: 40%;
+}
+
+.iputBtn:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+.iputBtn:hover,
+button:focus {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.iputBtn:hover:before,
+button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.iputBtn:active {
+    transform: scale(0.9);
+}
