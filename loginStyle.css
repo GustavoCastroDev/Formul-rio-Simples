@@ -59,21 +59,43 @@ body {
     margin-left: 50px;
 }
 
+/*formatando os inputs*/
 .main-inputs{
     font-family: Poppins;
     color: rgb(223, 223, 223);
+    font-size: 12px;
+    padding-left: 2%;
 }
 
-/*estilizando os inputs*/
+/*formatando o link para página de cadastro*/
+
+.link-cadastro{
+    font-family: Poppins;
+    color: rgb(223, 223, 223);
+    margin-top: 20px;
+    padding-left: 1%;
+    font-size: 12px;
+}
+
+.text-cadastro{
+    font-family: Poppins;
+    color: rgb(223, 223, 223);
+    margin-top: 20px;
+    padding-left: 25%;
+    font-size: 12px;
+}
+
+/*estilizando o botão*/
 .inputNome{
     width: 490px;
-    border-radius: 7px;
+    border-radius: 15px;
     height: 25px;
     background-color: black;
     border: 2px solid rgb(223, 223, 223);
     font-family: Poppins;
     color: rgb(223, 223, 223);
     margin-top: -10px;
+    padding-left: 2%;
 }
 
 .iputBtn{
@@ -124,3 +146,4 @@ button:focus:before {
 .iputBtn:active {
     transform: scale(0.9);
 }
+
