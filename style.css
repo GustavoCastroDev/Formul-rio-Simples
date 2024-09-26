@@ -105,3 +105,48 @@ button:focus:before {
 .main-button:active {
     transform: scale(0.9);
 }
+
+/*adicionando responsividade a página*/
+@media (width: 412px), (width: 360px){
+    body{
+        max-width: 412px;
+        height: 800px;
+    }
+
+    .main-section {
+        justify-content: center;
+        align-items: top;
+        height: 750px;
+        width: 330px;
+        background-color: rgba(0, 0, 0, 0.600);
+        border-radius: 10px;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .main-text{
+        font-size: 18px;
+        width: 281px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .second-text{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .main-button{
+        padding: 8px 16px;
+        margin-left: 32%;
+        margin-top: 15px;
+
+    }
+
+    .p-class{
+        text-align: center;
+        padding-right: 70px;
+        margin-top: 45px;
+    }
+}
