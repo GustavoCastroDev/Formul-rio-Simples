@@ -107,7 +107,7 @@ button:focus:before {
 }
 
 /*adicionando responsividade a página*/
-@media (max-width: 480px){
+@media (max-width: 480px), (max-width: 360px){
     body{
         max-width: 412px;
         height: 800px;
