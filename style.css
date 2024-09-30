@@ -107,11 +107,7 @@ button:focus:before {
 }
 
 /*adicionando responsividade a página*/
-@media (max-width: 480px), (max-width: 360px){
-    body{
-        max-width: 412px;
-        height: 800px;
-    }
+@media (max-width: 412px){
 
     .main-section {
         justify-content: center;
@@ -148,5 +144,18 @@ button:focus:before {
         text-align: center;
         padding-right: 70px;
         margin-top: 45px;
+    }
+}
+
+@media (max-width: 360px){
+    .main-section {
+        justify-content: center;
+        align-items: top;
+        height: 750px;
+        width: 330px;
+        background-color: rgba(0, 0, 0, 0.600);
+        border-radius: 10px;
+        margin-left: 8px;
+        margin-top: 10%;
     }
 }

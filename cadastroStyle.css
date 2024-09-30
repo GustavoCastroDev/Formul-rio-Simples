@@ -42,7 +42,7 @@ body{
 }
 
 .main-input, .input-senha{
-    padding-left: 2%px;
+    padding-left: 2%;
     margin-left: 40px;
     font-family: Poppins;
     border-radius: 15px;
@@ -140,4 +140,43 @@ button:focus:before {
     color: rgb(223, 223, 223);
     margin-top: 20px;
     font-size: 16px;
+}
+
+/*adicionando responsividade a pagina*/
+@media (max-width: 413px){
+    .main-section{
+        width: 370px;
+        margin-left: 2px;
+    }
+
+    .main-input{
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    .input-senha{
+        width: 310px;
+        margin-left: 20px;
+    }
+
+    .main-text{
+        margin-left: 35px; 
+    }
+
+    .input-text{
+        margin-left: -15px;
+    }
+
+    .main-button{
+        margin-left: 100px;
+    }
+
+    .text-login{
+        margin-left: 100px;
+    }
+
+    .link-login{
+        margin-left: -35px;
+        width: 300px;
+    }
 }
